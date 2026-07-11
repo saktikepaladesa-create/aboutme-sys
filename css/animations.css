@@ -1,0 +1,144 @@
+/* =====================================================
+   ANIMATIONS.CSS
+   Semua animasi (keyframes) website ada di sini.
+   Jika ingin mempercepat/memperlambat animasi,
+   cukup ubah durasi (detik) di masing-masing class.
+===================================================== */
+
+/* =========================
+   SCROLL REVEAL (dikontrol oleh scroll.js lewat class .in-view)
+========================= */
+.reveal-up, .reveal-left, .reveal-right {
+  opacity: 0;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up { transform: translateY(32px); }
+.reveal-left { transform: translateX(-32px); }
+.reveal-right { transform: translateX(32px); }
+
+.reveal-up.in-view,
+.reveal-left.in-view,
+.reveal-right.in-view {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* stagger children automatically via inline delay set by JS (--delay) */
+.reveal-up, .reveal-left, .reveal-right {
+  transition-delay: var(--delay, 0s);
+}
+
+/* =========================
+   HERO AURORA FLOAT
+========================= */
+@keyframes auroraFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(6%, 8%) scale(1.1); }
+}
+
+@keyframes auroraFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-8%, -6%) scale(1.15); }
+}
+
+/* =========================
+   PULSE / GLOW / BLINK
+========================= */
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 6px #3ddc84; opacity: 1; }
+  50% { box-shadow: 0 0 14px #3ddc84; opacity: 0.6; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes borderShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   FLOATING BADGES
+========================= */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+@keyframes scrollLine {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  50.01% { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* =========================
+   SKELETON LOADING (gallery)
+========================= */
+@keyframes skeletonShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* =========================
+   PARTICLE FLOAT (generated inline by main.js)
+========================= */
+@keyframes particleFloat {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.5; }
+  100% { transform: translateY(-120px) translateX(20px); opacity: 0; }
+}
+
+/* =========================
+   MAGNETIC BUTTON RIPPLE
+========================= */
+.magnetic {
+  will-change: transform;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(0);
+  animation: rippleEffect 0.6s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes rippleEffect {
+  to { transform: scale(3); opacity: 0; }
+}
+
+/* =========================
+   CARD TILT (applied via JS transform, transition here only)
+========================= */
+.skill-card, .zodiac-card, .gallery-item, .profile-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

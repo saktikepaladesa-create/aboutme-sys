@@ -1,0 +1,90 @@
+/* =====================================================
+   VARIABLES.CSS
+   Semua warna, jarak, dan ukuran dasar website ada di sini.
+   Ganti satu nilai di bawah ini, seluruh website akan
+   otomatis ikut berubah. Tidak perlu edit file CSS lain.
+===================================================== */
+
+:root {
+
+  /* -----------------------------------------------
+     WARNA UTAMA (BACKGROUND)
+     Ini adalah warna dasar / latar belakang website.
+  ----------------------------------------------- */
+  --background: #05050a;          /* latar belakang paling gelap */
+  --background-soft: #0a0a14;     /* latar belakang section */
+  --background-elevated: #0f0f1c; /* latar belakang card / navbar */
+
+  /* -----------------------------------------------
+     WARNA UTAMA (BRAND / ACCENT)
+     Ini warna khas yang dipakai di tombol, glow, border.
+  ----------------------------------------------- */
+  --primary: #7c5cff;       /* ungu neon - warna utama */
+  --primary-soft: #a48bff;  /* ungu lebih terang */
+  --secondary: #00e5ff;     /* cyan neon - warna kedua */
+  --secondary-soft: #6bf2ff;
+  --accent: #ff5da2;        /* pink neon - aksen kecil */
+
+  /* -----------------------------------------------
+     GRADIENT
+     Dipakai untuk teks, border, glow, tombol.
+  ----------------------------------------------- */
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-glow: radial-gradient(circle, rgba(124, 92, 255, 0.35) 0%, rgba(0, 229, 255, 0.12) 45%, transparent 70%);
+  --gradient-text: linear-gradient(90deg, var(--primary-soft), var(--secondary-soft));
+
+  /* -----------------------------------------------
+     WARNA TEKS
+  ----------------------------------------------- */
+  --text: #f4f4f8;          /* teks utama, terang */
+  --text-secondary: #a6a6b8;/* teks deskripsi, lebih redup */
+  --text-muted: #6b6b80;    /* teks label kecil / caption */
+
+  /* -----------------------------------------------
+     BORDER & CARD (GLASSMORPHISM)
+  ----------------------------------------------- */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --card: rgba(255, 255, 255, 0.035);
+  --card-hover: rgba(255, 255, 255, 0.06);
+
+  /* -----------------------------------------------
+     SHADOW & GLOW
+  ----------------------------------------------- */
+  --shadow: rgba(0, 0, 0, 0.55);
+  --glow-primary: rgba(124, 92, 255, 0.45);
+  --glow-secondary: rgba(0, 229, 255, 0.35);
+
+  /* -----------------------------------------------
+     TIPOGRAFI
+  ----------------------------------------------- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* -----------------------------------------------
+     RADIUS & SPACING
+  ----------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --container-width: 1200px;
+  --section-padding: 140px;
+
+  /* -----------------------------------------------
+     TRANSISI
+  ----------------------------------------------- */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* -----------------------------------------------
+     Z-INDEX
+  ----------------------------------------------- */
+  --z-navbar: 100;
+  --z-cursor: 200;
+  --z-lightbox: 300;
+  --z-loader: 400;
+}
