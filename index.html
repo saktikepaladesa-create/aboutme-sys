@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kepala Desa | SEO Specialist, Node.js Developer & Python Developer</title>
+<meta name="description" content="Portfolio resmi Kepala Desa, SEO Specialist, Backend Developer, Node.js Developer, Python Developer, dan Automation Engineer dari Indonesia. Berpengalaman dalam Technical SEO, Website Optimization, Link Building, Web Scraping, API Integration, AI Automation, dan Backend Development.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="keywords" content="Kepala Desa, SEO Specialist, Technical SEO, SEO Expert Indonesia, Backend Developer, Node.js Developer, Python Developer, JavaScript Developer, Automation Engineer, Web Developer, Full Stack Developer, API Integration, Web Scraping, AI Automation, Google Search Console, Google Analytics, Ahrefs, Screaming Frog, Link Building, On Page SEO, Off Page SEO, Website Optimization, Core Web Vitals, Schema Markup, Cloudflare, Linux, Git, GitHub, Organic Growth, Portfolio Developer Indonesia">
+<meta name="author" content="Kepala Desa">
+<meta name="language" content="Indonesian">
+
+<meta name="theme-color" content="#050816">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="96x96" href="https://i.pinimg.com/736x/00/69/8b/00698b80cf3e8d52cd8332de44d15dd7.jpg">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/00/69/8b/00698b80cf3e8d52cd8332de44d15dd7.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- =========================================================
+     PAGE LOADER
+     Loader singkat sebelum website tampil.
+========================================================= -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-text">KDS</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- =========================================================
+     CURSOR GLOW (Desktop only)
+========================================================= -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- =========================================================
+     SCROLL PROGRESS BAR
+========================================================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- =========================================================
+     NAVBAR
+     Ganti logo teks "KDS" atau menu di bagian ini.
+========================================================= -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="navbar-logo">KDS<span class="logo-dot">.</span></a>
+
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#timeline" class="nav-link">Timeline</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="navbar-cta">Let's Talk</a>
+
+    <button class="navbar-burger" id="navbarBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+<!-- =========================================================
+     HERO SECTION
+     Ganti nama, jabatan (typing text ada di js/config.js)
+========================================================= -->
+<section class="hero" id="home">
+
+  <!-- background layers -->
+  <div class="hero-bg">
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="grid-overlay" id="gridOverlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="hero-inner container">
+
+    <div class="hero-text">
+      <p class="hero-eyebrow reveal-up">
+        <span class="status-dot"></span> Available for new opportunities
+      </p>
+
+      <h1 class="hero-title reveal-up">
+        Hi, I'm <span class="hero-name gradient-text">Kepala Desa</span>
+      </h1>
+
+      <h2 class="hero-subtitle reveal-up">
+        <span id="typingText"></span><span class="typing-cursor">|</span>
+      </h2>
+
+      <p class="hero-description reveal-up">
+        I work at the intersection of <strong>Technical SEO</strong> and
+        <strong>Backend Automation</strong> — building tools that make
+        websites faster, smarter, and easier to grow.
+      </p>
+
+      <div class="hero-buttons reveal-up">
+        <a href="#gallery" class="btn btn-primary magnetic">
+          View Portfolio
+        </a>
+        <a href="#contact" class="btn btn-outline magnetic">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up">
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-border">
+          <img src="" alt="Profile Photo" class="hero-photo" id="heroPhoto">
+        </div>
+        <!-- small floating badges around the photo -->
+        <div class="floating-badge badge-1">🐍 Python</div>
+        <div class="floating-badge badge-2">⚙️ Automation</div>
+        <div class="floating-badge badge-3">📈 SEO</div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <span class="scroll-indicator-line"></span>
+    Scroll
+  </a>
+</section>
+
+<!-- =========================================================
+     ABOUT SECTION
+     Ganti deskripsi, tanggal lahir, dan profile card di sini.
+========================================================= -->
+<section class="about" id="about">
+  <div class="container">
+
+    <p class="section-eyebrow reveal-up">About Me</p>
+    <h2 class="section-title reveal-up">
+      Turning curiosity into <span class="gradient-text">working systems</span>
+    </h2>
+
+    <div class="about-grid">
+
+      <div class="about-content reveal-left">
+        <p class="about-paragraph">
+          Saya bekerja di bidang <strong>Search Engine Optimization</strong>
+          dengan fokus pada Technical SEO, Website Optimization, Link Building,
+          Website Performance, Organic Growth, dan Digital Strategy.
+        </p>
+        <p class="about-paragraph">
+          Selain SEO, saya mengembangkan berbagai tools menggunakan
+          <strong>Node.js</strong> dan <strong>Python</strong> untuk automasi,
+          web scraping, integrasi API, analisis data, backend development,
+          serta AI workflow.
+        </p>
+        <p class="about-paragraph">
+          Saya menyukai teknologi baru, pemrograman, desain, automasi,
+          artificial intelligence, dan proses memecahkan masalah. Saya cepat
+          merasa bosan terhadap rutinitas sehingga selalu mencari tantangan
+          baru untuk terus berkembang dan belajar.
+        </p>
+
+        <!-- PERSONALITY TAGS -->
+        <div class="personality-tags">
+          <span class="tag">Creative</span>
+          <span class="tag">Curious</span>
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Adaptive</span>
+          <span class="tag">Fast Learner</span>
+          <span class="tag">Critical Thinking</span>
+          <span class="tag">Always Learning</span>
+          <span class="tag">Technology Enthusiast</span>
+          <span class="tag">AI Enthusiast</span>
+          <span class="tag">Automation Lover</span>
+        </div>
+      </div>
+
+      <!-- PROFILE CARD -->
+      <div class="profile-card reveal-right">
+        <div class="profile-card-glow"></div>
+        <div class="profile-row">
+          <span class="profile-label">Birthday</span>
+          <span class="profile-value">5 March 2004</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">Occupation</span>
+          <span class="profile-value">SEO Specialist, Developer</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">Nationality</span>
+          <span class="profile-value">Indonesia</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">Focus</span>
+          <span class="profile-value">SEO · Automation · Backend · AI</span>
+        </div>
+        <div class="profile-row">
+          <span class="profile-label">Stack</span>
+          <span class="profile-value">Node.js · Python · JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ZODIAC CARDS -->
+    <div class="zodiac-grid">
+
+      <div class="zodiac-card reveal-up">
+        <div class="zodiac-icon">🐟</div>
+        <h3 class="zodiac-title">Pisces</h3>
+        <p class="zodiac-subtitle">Western Astrology</p>
+        <p class="zodiac-text">
+          Dalam astrologi, Pisces sering dikaitkan dengan karakter yang
+          creative, imaginative, dan intuitive. Pisces juga dikenal sebagai
+          pribadi yang empathetic, flexible, dan open minded — seorang
+          dreamer sekaligus explorer yang senang menjelajahi hal baru.
+        </p>
+        <div class="zodiac-tags">
+          <span>Creative</span><span>Imaginative</span><span>Intuitive</span>
+          <span>Empathetic</span><span>Flexible</span><span>Open Minded</span>
+          <span>Dreamer</span><span>Explorer</span>
+        </div>
+      </div>
+
+      <div class="zodiac-card reveal-up">
+        <div class="zodiac-icon">🐒</div>
+        <h3 class="zodiac-title">Monkey</h3>
+        <p class="zodiac-subtitle">Chinese Zodiac</p>
+        <p class="zodiac-text">
+          Dalam tradisi Tionghoa, shio Monyet sering dikaitkan dengan
+          karakter yang creative, smart, dan adaptive. Shio ini juga dikenal
+          curious dan merupakan fast learner serta problem solver yang
+          innovative — seorang strategic thinker yang selalu berpikir out
+          of the box.
+        </p>
+        <div class="zodiac-tags">
+          <span>Creative</span><span>Smart</span><span>Adaptive</span>
+          <span>Curious</span><span>Fast Learner</span><span>Problem Solver</span>
+          <span>Innovative</span><span>Strategic Thinker</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     STATS SECTION
+     Angka akan menghitung otomatis saat discroll (lihat animations.js)
+========================================================= -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="80">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Projects</p>
+      </div>
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="120">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">SEO Campaigns</p>
+      </div>
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="250">0</span><span class="stat-plus">K</span>
+        <p class="stat-label">Lines of Code</p>
+      </div>
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="60">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Automation Scripts</p>
+      </div>
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="1200">0</span><span class="stat-plus">+</span>
+        <p class="stat-label">Coffee Cups</p>
+      </div>
+      <div class="stat-card reveal-up">
+        <span class="stat-number" data-count="24">0</span><span class="stat-plus">/7</span>
+        <p class="stat-label">Learning Every Day</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SKILLS SECTION
+     Tambah / hapus skill dengan copy-paste satu blok skill-card.
+========================================================= -->
+<section class="skills" id="skills">
+  <div class="container">
+
+    <p class="section-eyebrow reveal-up">What I Work With</p>
+    <h2 class="section-title reveal-up">
+      Tools I use to <span class="gradient-text">build & grow</span>
+    </h2>
+
+    <div class="skills-grid" id="skillsGrid">
+      <!-- skill-card blocks -->
+      <div class="skill-card reveal-up"><span class="skill-icon">🟢</span><span class="skill-name">Node.js</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">📜</span><span class="skill-name">JavaScript</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🌐</span><span class="skill-name">HTML</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🎨</span><span class="skill-name">CSS</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🔍</span><span class="skill-name">Technical SEO</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">📄</span><span class="skill-name">On Page SEO</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🔗</span><span class="skill-name">Off Page SEO</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🔗</span><span class="skill-name">Link Building</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">☁️</span><span class="skill-name">Cloudflare</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🐧</span><span class="skill-name">Linux</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🤖</span><span class="skill-name">Automation</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🔌</span><span class="skill-name">API</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🕷️</span><span class="skill-name">Web Scraping</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">📊</span><span class="skill-name">Search Console</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">📈</span><span class="skill-name">Google Analytics</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🅰️</span><span class="skill-name">Ahrefs</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🐸</span><span class="skill-name">Screaming Frog</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🔀</span><span class="skill-name">Git</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🐙</span><span class="skill-name">GitHub</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🏷️</span><span class="skill-name">Schema Markup</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">⚡</span><span class="skill-name">Core Web Vitals</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">🚀</span><span class="skill-name">Website Optimization</span></div>
+      <div class="skill-card reveal-up"><span class="skill-icon">📶</span><span class="skill-name">Organic Growth</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     GALLERY SECTION
+     Gallery dibuat OTOMATIS oleh js/gallery.js dari array
+     GALLERY_IMAGES di js/config.js. Jangan tambah <img> manual.
+========================================================= -->
+<section class="gallery" id="gallery">
+  <div class="container">
+
+    <p class="section-eyebrow reveal-up">Gallery</p>
+    <h2 class="section-title reveal-up">
+      A few <span class="gradient-text">moments & shots</span>
+    </h2>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- gallery-item elements di-generate otomatis oleh gallery.js -->
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     LIGHTBOX (untuk gallery)
+========================================================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img src="" alt="" class="lightbox-image" id="lightboxImage">
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- =========================================================
+     TIMELINE SECTION
+     Tambah / hapus timeline-item untuk mengubah histori.
+========================================================= -->
+<section class="timeline" id="timeline">
+  <div class="container">
+
+    <p class="section-eyebrow reveal-up">My Journey</p>
+    <h2 class="section-title reveal-up">
+      A timeline of <span class="gradient-text">growth</span>
+    </h2>
+
+    <div class="timeline-list">
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2004</span>
+        <h3 class="timeline-title">Born</h3>
+        <p class="timeline-text">The beginning of the journey.</p>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2018</span>
+        <h3 class="timeline-title">Interest in Technology</h3>
+        <p class="timeline-text">First curiosity sparked toward computers and the internet.</p>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2020</span>
+        <h3 class="timeline-title">Learning Programming</h3>
+        <p class="timeline-text">Started learning to code and build small projects.</p>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2022</span>
+        <h3 class="timeline-title">SEO Journey</h3>
+        <p class="timeline-text">Began working professionally in Search Engine Optimization.</p>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2024</span>
+        <h3 class="timeline-title">Automation & AI</h3>
+        <p class="timeline-text">Started building automation tools and exploring AI workflows.</p>
+      </div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <span class="timeline-year">2026</span>
+        <h3 class="timeline-title">Always Learning</h3>
+        <p class="timeline-text">Continuously growing across SEO, backend, and automation.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     QUOTES CAROUSEL
+========================================================= -->
+<section class="quotes">
+  <div class="container">
+    <div class="quotes-carousel" id="quotesCarousel">
+      <p class="quote-item active">"Stay Curious."</p>
+      <p class="quote-item">"Keep Building."</p>
+      <p class="quote-item">"Never Stop Learning."</p>
+      <p class="quote-item">"Technology Solves Problems."</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT SECTION
+     Link diambil otomatis dari js/config.js (SOCIAL_LINKS)
+========================================================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-box reveal-up">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">
+        Let's build something <span class="gradient-text">great together</span>
+      </h2>
+      <p class="contact-text">
+        Have a project in mind, or just want to talk SEO, automation,
+        or code? My inbox is always open.
+      </p>
+
+      <div class="contact-links" id="contactLinks">
+        <!-- link sosial media di-generate otomatis oleh main.js -->
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="currentYear"></span> Kepala Desa. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+     Urutan load penting: config -> main -> module lainnya
+===================================================== -->
+<script src="js/config.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/typing.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
